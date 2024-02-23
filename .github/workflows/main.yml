@@ -50,36 +50,36 @@ jobs:
             platform: v1000
             parm: 'dev-v7 prod-v7'
 
-          - version: 7.1
-            platform: apollolake
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: braswell
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: broadwell
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: broadwellnk
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: denverton
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: geminilake
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: purley
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: r1000
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: v1000
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: epyc7002
-            parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: apollolake
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: braswell
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: broadwell
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: broadwellnk
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: denverton
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: geminilake
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: purley
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: r1000
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: v1000
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: epyc7002
+          #   parm: 'dev-v7 prod-v7'
 
     runs-on: ubuntu-latest
 
@@ -147,9 +147,9 @@ jobs:
           mkdir -p ${ROOT_PATH}/source/output
           repo=${{ github.server_url }}/${{ github.repository }}
 
-          # 5.10.55 Temporary use of https://github.com/XPEnology-Community/shiki-lkm5
+          # 5.10.55 Temporary use of https://github.com/andatoshiki/shiki-lkm
           # And currently only 7.2 USB OK, @jim3ma is adapting to 7.2.
-          [ "${KVER:0:1}" = "5" ] && repo=https://github.com/XPEnology-Community/shiki-lkm5
+          [ "${KVER:0:1}" = "5" ] && repo=https://github.com/andatoshiki/shiki-lkm
 
           git clone ${repo} ${ROOT_PATH}/source/input
 
