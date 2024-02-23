@@ -44,7 +44,7 @@ static int GetHwCapability_shim(CAPABILITY *cap)
             dbg_compare_cap_value(cap->id, cap->support);
             return 0;
 
-        case CAPABILITY_FAN_RPM_SKT:
+        case CAPABILITY_FAN_RPM_RPT:
             cap->support = platform_has_hwmon_fan_rpm(hw_config) ? 1 : 0;
             dbg_compare_cap_value(cap->id, cap->support);
             return 0;

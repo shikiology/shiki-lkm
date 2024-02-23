@@ -109,7 +109,7 @@ struct hw_config {
     const struct hw_config_hwmon {
         enum hwmon_sys_thermal_zone_id sys_thermal[HWMON_SYS_THERMAL_ZONE_IDS]; //GetHwCapability(id = CAPABILITY_THERMAL)
         enum hwmon_sys_voltage_sensor_id sys_voltage[HWMON_SYS_VOLTAGE_SENSOR_IDS];
-        enum hwmon_sys_fan_rpm_id sys_fan_speed_rpm[HWMON_SYS_FAN_RPM_IDS]; //GetHwCapability(id = CAPABILITY_FAN_RPM_SKT)
+        enum hwmon_sys_fan_rpm_id sys_fan_speed_rpm[HWMON_SYS_FAN_RPM_IDS]; //GetHwCapability(id = CAPABILITY_FAN_RPM_RPT)
         enum hwmon_sys_hdd_bp_id hdd_backplane[HWMON_SYS_HDD_BP_IDS];
         enum hw_psu_sensor_id psu_status[HWMON_PSU_SENSOR_IDS];
         enum hwmon_sys_current_id sys_current[HWMON_SYS_CURRENT_IDS];
