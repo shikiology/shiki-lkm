@@ -240,10 +240,10 @@ jobs:
           echo "${{ env.VERSION }}" > "shiki-lkms/VERSION"
           zip -9 shiki-lkms.zip -j shiki-lkms/*
 
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: env.VERSION != ''
-        with:
-          tag_name: ${{ env.VERSION }}
-          files: shiki-lkms.zip
+      # - name: Release
+      #   uses: softprops/action-gh-release@v1
+      #   if: env.VERSION != ''
+      #   with:
+      #     tag_name: ${{ env.VERSION }}
+      #     files: shiki-lkms.zip
 
