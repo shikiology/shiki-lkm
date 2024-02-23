@@ -50,36 +50,36 @@ jobs:
             platform: v1000
             parm: 'dev-v7 prod-v7'
 
-          - version: 7.1
-            platform: apollolake
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: braswell
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: broadwell
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: broadwellnk
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: denverton
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: geminilake
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: purley
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: r1000
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: v1000
-            parm: 'dev-v7 prod-v7'
-          - version: 7.1
-            platform: epyc7002
-            parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: apollolake
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: braswell
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: broadwell
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: broadwellnk
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: denverton
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: geminilake
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: purley
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: r1000
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: v1000
+          #   parm: 'dev-v7 prod-v7'
+          # - version: 7.1
+          #   platform: epyc7002
+          #   parm: 'dev-v7 prod-v7'
 
     runs-on: ubuntu-latest
 
