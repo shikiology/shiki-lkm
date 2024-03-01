@@ -28,6 +28,7 @@ jobs:
       - name: Build lkms
         id: build
         run: |
+          chmod +x ./compile-lkms.sh
           ./compile-lkms.sh
           zip -9 shiki-lkms.zip -j output/*
 
