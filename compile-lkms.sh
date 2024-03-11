@@ -26,7 +26,7 @@ function compileLkm() {
 }
 
 # Main
-docker pull andatoshiki/shiki-compiler:${TOOLKIT_VER}-amd64
+docker pull andatoshiki/shiki-compiler:${TOOLKIT_VER}-ubuntu-amd64
 while read PLATFORM KVER; do
   compileLkm "${PLATFORM}" "${KVER}" &
 done < PLATFORMS
