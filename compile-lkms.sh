@@ -4,7 +4,7 @@ set -e
 
 TMP_PATH="/tmp"
 DEST_PATH="./output"
-TOOLKIT_VER="7.1"
+TOOLKIT_VER="7.2-ubuntu-amd64"
 
 mkdir -p "${DEST_PATH}"
 
